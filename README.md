@@ -140,6 +140,7 @@ The model uses a probability threshold of `0.5` to convert predicted probabiliti
 
 ## Project Structure
 
+```text
 logistic-regression-from-scratch/
 ├── README.md
 ├── logistic_regression.py
@@ -148,16 +149,21 @@ logistic-regression-from-scratch/
 └── results/
     ├── logistic_curve.png
     └── loss_convergence.png
+```
 
 ## How to Run
 
 Clone the repository and install the required dependencies:
 
+```bash
 pip install -r requirements.txt
+```
 
 Run the program:
 
+```bash
 python3 logistic_regression.py
+```
 
 The program trains the logistic regression model, prints the training results and predictions, and generates the visualizations.
 
@@ -165,32 +171,32 @@ The program trains the logistic regression model, prints the training results an
 
 Through this implementation, I learned:
 
-How logistic regression converts a linear combination of features into probabilities using the sigmoid function.
-How binary cross-entropy measures classification error.
-How gradients are calculated for logistic regression.
-How gradient descent optimizes model parameters.
-How probabilities can be converted into binary predictions using a decision threshold.
-How training loss can be monitored to evaluate optimization.
-How numerical stability can be improved when calculating logarithmic loss.
+- How logistic regression converts a linear combination of features into probabilities using the sigmoid function.
+- How binary cross-entropy measures classification error.
+- How gradients are calculated for logistic regression.
+- How gradient descent optimizes model parameters.
+- How probabilities can be converted into binary predictions using a decision threshold.
+- How training loss can be monitored to evaluate optimization.
+- How numerical stability can be improved when calculating logarithmic loss.
 
 ## Limitations
 
 This implementation is intentionally simple and uses a small synthetic dataset. It does not currently include:
-a. Multiple input features
-b. Train/validation/test splits
-c. Feature scaling
-d. Regularization
-e. Precision, recall, or F1-score
-f. Comparison with a library implementation
-g. Evaluation on a real-world dataset
+- Multiple input features
+- Train/validation/test splits
+- Feature scaling
+- Regularization
+- Precision, recall, or F1-score
+- Comparison with a library implementation
+- Evaluation on a real-world dataset
 
 ## Future Improvements
 
 Possible extensions include:
-a. Extending the implementation to multiple features.
-b. Adding train/validation/test splits.
-c. Implementing regularization.
-d. Experimenting with different learning rates and decision thresholds.
-e. Evaluating the model using precision, recall, and F1-score.
-f. Testing the implementation on a real-world binary classification dataset.
-g.Comparing the implementation with scikit-learn's logistic regression.
+- Extending the implementation to multiple features.
+- Adding train/validation/test splits.
+- Implementing regularization.
+- Experimenting with different learning rates and decision thresholds.
+- Evaluating the model using precision, recall, and F1-score.
+- Testing the implementation on a real-world binary classification dataset.
+- Comparing the implementation with scikit-learn's logistic regression.
